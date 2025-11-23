@@ -2,6 +2,7 @@
 """Module that provides a function to add two floats with type annotations."""
 
 def add(a: float, b: float) -> float:
-    
+  
+
     """Return the sum of two floats."""
     return a + b
