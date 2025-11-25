@@ -1,1 +1,1 @@
-This folder is created to practise HTML advanced
+This file is created to practise HTML advanced
