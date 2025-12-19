@@ -1,0 +1,1 @@
+This README is created to practise noSql
