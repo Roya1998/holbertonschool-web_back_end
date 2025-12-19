@@ -37,8 +37,8 @@ class Server:
         Returns:
             List[List]: List of elements in a page
         """
-        assert(type(page_size) == int and type(page) == int)
-        assert(page > 0 and page_size > 0)
+        assert isinstance(page,int) and isinstance(page_size,int)
+        assert (page > 0 and page_size > 0)
         beginning, end = index_range(page, page_size)
         return self.dataset()[beginning:end]
 
