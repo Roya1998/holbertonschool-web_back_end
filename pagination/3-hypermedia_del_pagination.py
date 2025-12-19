@@ -49,8 +49,8 @@ class Server:
         Returns:
             Dict: dictionary with a key-value pairs
         """
-        assert(type(index) == int and type(page_size) == int)
-        assert(0 <= index < len(self.dataset()))
+        assert isinstance(index,int) and isinstance(page_size,int)
+        assert (0 <= index < len(self.dataset()))
         dataset = self.indexed_dataset()
         data = []
         next_index = index
