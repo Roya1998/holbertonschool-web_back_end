@@ -49,7 +49,7 @@ class Server:
         Returns:
             Dict: dictionary with a key-value pairs
         """
-        assert isinstance(index,int) and isinstance(page_size,int)
+        assert isinstance(index, int) and isinstance(page_size, int)
         assert (0 <= index < len(self.dataset()))
         dataset = self.indexed_dataset()
         data = []
