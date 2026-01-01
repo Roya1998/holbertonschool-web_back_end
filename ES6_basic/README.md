@@ -1,0 +1,1 @@
+This file is created to practise ES6 basic
