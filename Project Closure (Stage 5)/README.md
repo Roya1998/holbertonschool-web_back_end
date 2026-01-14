@@ -7,4 +7,4 @@ Add-to-cart and remove-from-cart functionality
 Basic checkout flow (UI level)
 Authentication-ready structure for future user accounts
 
-The project outcomes closely align with the initial objectives defined in the Project Charter. The primary goal—to create an intuitive mobile app for browsing and purchasing makeup products similar to platforms like Trendyol or Temu—was achieved. The MVP demonstrates a clear and user-friendly shopping flow focused on the beauty industry.
+The project outcomes closely align with the initial objectives defined in the project charter. The primary goal—to create an intuitive mobile app for browsing and purchasing makeup products similar to platforms like Trendyol or Temu—was achieved. The MVP demonstrates a clear and user-friendly shopping flow focused on the beauty industry.
