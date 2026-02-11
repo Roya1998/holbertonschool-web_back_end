@@ -1,16 +1,16 @@
-const fs = require("fs");
+const fs = require('fs');
 
 function countStudents(path) {
   try {
     // Read the file synchronously
-    const data = fs.readFileSync(path, "utf-8");
+    const data = fs.readFileSync(path, 'utf-8');
 
     // Split file content by lines and filter out empty lines
-    const lines = data.split("\n").filter((line) => line.trim() !== "");
+    const lines = data.split('\n').filter((line) => line.trim() !== '');
 
     // Check if the file has any lines (besides the header)
     if (lines.length < 2) {
-      throw new Error("Cannot load the database");
+      throw new Error('Cannot load the database');
     }
 
     // Remove the first line (header)
@@ -22,7 +22,7 @@ function countStudents(path) {
 
     students.forEach((line) => {
       // Destructure only the first name and field (omit lastname and age)
-      const [firstname, , , field] = line.split(",");
+      const [firstname, , , field] = line.split(',');
 
       if (!Object.prototype.hasOwnProperty.call(fields, field)) {
         fields[field] = [];
@@ -44,7 +44,7 @@ function countStudents(path) {
     }
   } catch (error) {
     // Handle errors when the file cannot be loaded
-    throw new Error("Cannot load the database");
+    throw new Error('Cannot load the database');
   }
 }
 
