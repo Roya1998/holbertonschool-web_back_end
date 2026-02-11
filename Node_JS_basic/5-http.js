@@ -11,11 +11,15 @@ const app = http.createServer((req, res) => {
     res.end('Hello Holberton School!');
   } else if (req.url === '/students') {
     res.statusCode = 200;
-    res.write('This is the list of our students\n');
+
+    if (!database) {
+      res.end('Cannot load the database');
+      return;
+    }
 
     countStudents(database)
       .then((data) => {
-        res.end(data);
+        res.end(`This is the list of our students\n${data}`);
       })
       .catch(() => {
         res.end('Cannot load the database');
